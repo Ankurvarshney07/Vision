@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c66661f720a8041eb901dc38139ec58d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c66661f720a8041eb901dc38139ec58d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c66661f720a8041eb901dc38139ec58d = L.map(
+                "map_c66661f720a8041eb901dc38139ec58d",
+                {
+                    center: [22.59, 78.96],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_959cba9f8f53494a6c9784bbff1837cd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_959cba9f8f53494a6c9784bbff1837cd.addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var marker_feb80ad16f1ad5b7406d24ec82c93507 = L.marker(
+                [19.054999, 72.8692035],
+                {
+}
+            ).addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var icon_70e7b5bef30f9f27e4e94432d633ec26 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d88bed49960899821a62e7262c41737 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_687ae9b1feb8b45af0efc65db6d00c57 = $(`<div id="html_687ae9b1feb8b45af0efc65db6d00c57" style="width: 100.0%; height: 100.0%;">             <b>IIT Bombay</b><br>             City: Mumbai<br>             Opening Rank: 5<br>             Closing Rank: 50<br>             Average Rank: 27             </div>`)[0];
+                popup_5d88bed49960899821a62e7262c41737.setContent(html_687ae9b1feb8b45af0efc65db6d00c57);
+            
+        
+
+        marker_feb80ad16f1ad5b7406d24ec82c93507.bindPopup(popup_5d88bed49960899821a62e7262c41737)
+        ;
+
+        
+    
+    
+            marker_feb80ad16f1ad5b7406d24ec82c93507.bindTooltip(
+                `<div>
+                     IIT Bombay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_feb80ad16f1ad5b7406d24ec82c93507.setIcon(icon_70e7b5bef30f9f27e4e94432d633ec26);
+            
+    
+            var marker_7ab313ef7a9cf5bce03892cf2a1d3b5f = L.marker(
+                [13.0836939, 80.270186],
+                {
+}
+            ).addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var icon_2358df8771bc974b23416c7cb8d8b793 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc2a7aec1a877750b5b3d5aa4df770ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcbfe7158bf6417fd6ff059c41795f9f = $(`<div id="html_dcbfe7158bf6417fd6ff059c41795f9f" style="width: 100.0%; height: 100.0%;">             <b>IIT Madras</b><br>             City: Chennai<br>             Opening Rank: 18<br>             Closing Rank: 82<br>             Average Rank: 50             </div>`)[0];
+                popup_cc2a7aec1a877750b5b3d5aa4df770ea.setContent(html_dcbfe7158bf6417fd6ff059c41795f9f);
+            
+        
+
+        marker_7ab313ef7a9cf5bce03892cf2a1d3b5f.bindPopup(popup_cc2a7aec1a877750b5b3d5aa4df770ea)
+        ;
+
+        
+    
+    
+            marker_7ab313ef7a9cf5bce03892cf2a1d3b5f.bindTooltip(
+                `<div>
+                     IIT Madras
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ab313ef7a9cf5bce03892cf2a1d3b5f.setIcon(icon_2358df8771bc974b23416c7cb8d8b793);
+            
+    
+            var marker_9ae61ac63e1f6c8bf7605304ccdc7cc3 = L.marker(
+                [28.6430858, 77.2192671],
+                {
+}
+            ).addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var icon_8f304a844e3d37a1341021d7b2990aa9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16c17e75ce9a47df8b128984d5218f1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21e59f1010e88f80ae10d36b612756ad = $(`<div id="html_21e59f1010e88f80ae10d36b612756ad" style="width: 100.0%; height: 100.0%;">             <b>IIT Delhi</b><br>             City: New Delhi<br>             Opening Rank: 39<br>             Closing Rank: 89<br>             Average Rank: 64             </div>`)[0];
+                popup_16c17e75ce9a47df8b128984d5218f1e.setContent(html_21e59f1010e88f80ae10d36b612756ad);
+            
+        
+
+        marker_9ae61ac63e1f6c8bf7605304ccdc7cc3.bindPopup(popup_16c17e75ce9a47df8b128984d5218f1e)
+        ;
+
+        
+    
+    
+            marker_9ae61ac63e1f6c8bf7605304ccdc7cc3.bindTooltip(
+                `<div>
+                     IIT Delhi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9ae61ac63e1f6c8bf7605304ccdc7cc3.setIcon(icon_8f304a844e3d37a1341021d7b2990aa9);
+            
+    
+            var marker_059ba9dff06e993532eaa72bbb26790e = L.marker(
+                [26.4609135, 80.3217588],
+                {
+}
+            ).addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var icon_a20112444a482af92a1b9285531e5a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70ad748fd7a7ce73bf9a168d2c000784 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efa9ed7c60e31c468aa6b9c767566a93 = $(`<div id="html_efa9ed7c60e31c468aa6b9c767566a93" style="width: 100.0%; height: 100.0%;">             <b>IIT Kanpur</b><br>             City: Kanpur<br>             Opening Rank: 61<br>             Closing Rank: 132<br>             Average Rank: 96             </div>`)[0];
+                popup_70ad748fd7a7ce73bf9a168d2c000784.setContent(html_efa9ed7c60e31c468aa6b9c767566a93);
+            
+        
+
+        marker_059ba9dff06e993532eaa72bbb26790e.bindPopup(popup_70ad748fd7a7ce73bf9a168d2c000784)
+        ;
+
+        
+    
+    
+            marker_059ba9dff06e993532eaa72bbb26790e.bindTooltip(
+                `<div>
+                     IIT Kanpur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_059ba9dff06e993532eaa72bbb26790e.setIcon(icon_a20112444a482af92a1b9285531e5a0c);
+            
+    
+            var marker_1f71df4d5795724dc0bb8a25e0e8b9bf = L.marker(
+                [22.34309, 87.3012875],
+                {
+}
+            ).addTo(map_c66661f720a8041eb901dc38139ec58d);
+        
+    
+            var icon_d271219cd560c51c5596f6c059d3f579 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "graduation-cap",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7981c120f563c742f42008de5c22ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a457a9ee0b1810dc8474906b4514920f = $(`<div id="html_a457a9ee0b1810dc8474906b4514920f" style="width: 100.0%; height: 100.0%;">             <b>IIT Kharagpur</b><br>             City: Kharagpur<br>             Opening Rank: 91<br>             Closing Rank: 209<br>             Average Rank: 150             </div>`)[0];
+                popup_f7981c120f563c742f42008de5c22ccc.setContent(html_a457a9ee0b1810dc8474906b4514920f);
+            
+        
+
+        marker_1f71df4d5795724dc0bb8a25e0e8b9bf.bindPopup(popup_f7981c120f563c742f42008de5c22ccc)
+        ;
+
+        
+    
+    
+            marker_1f71df4d5795724dc0bb8a25e0e8b9bf.bindTooltip(
+                `<div>
+                     IIT Kharagpur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1f71df4d5795724dc0bb8a25e0e8b9bf.setIcon(icon_d271219cd560c51c5596f6c059d3f579);
+            
+</script>
+</html>
